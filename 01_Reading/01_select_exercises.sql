@@ -27,7 +27,6 @@ SELECT studio_name FROM studios;
 
 
 
-
 -- Soluciones
 
 -- 1. 
