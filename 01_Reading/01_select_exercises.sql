@@ -26,7 +26,6 @@ SELECT title, total_viewers, total_revenue FROM movies;
 SELECT studio_name FROM studios;
 
 
-
 -- Soluciones
 
 -- 1. 
