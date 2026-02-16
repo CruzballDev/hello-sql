@@ -1,34 +1,36 @@
-/*
+/
 
-1️. Obtener el título y año de estreno de todas las películas, ordenadas por año de estreno descendente.
+--1️. Obtener el título y año de estreno de todas las películas, ordenadas por año de estreno descendente.
 
-2. Obtener el nombre y fecha de nacimiento de los actores nacidos desde el 01 de enero de 1975.
 
-3. Obtener los actores cuyo nombre comience con la letra 'B'.
 
-4. Obtener los actores cuyo nombre termine con la letra 'T', ordenados por fecha de nacimiento descendente.
+--2. Obtener el nombre y fecha de nacimiento de los actores nacidos desde el 01 de enero de 1975.
 
-5. Obtener los directores cuyo nombre contenga las letras 'V' o 'W'.
+--3. Obtener los actores cuyo nombre comience con la letra 'B'.
 
-6. Obtener los directores cuyo nombre no contenga las letras 'V' o 'W'.
+--4. Obtener los actores cuyo nombre termine con la letra 'T', ordenados por fecha de nacimiento descendente.
 
-7. Obtener el título y año de las películas estrenadas en el año 1980 o antes.
+--5. Obtener los directores cuyo nombre contenga las letras 'V' o 'W'.
 
-8. Obtener las 5 películas con más recaudación, ordenadas de manera descendente según su recaudación. Mostrar título, año, cantidad de espectadores y recaudación.
+--6. Obtener los directores cuyo nombre no contenga las letras 'V' o 'W'.
 
-9. Obtener todas las personas que tengan las 5 vocales en su nombre.
+--7. Obtener el título y año de las películas estrenadas en el año 1980 o antes.
 
-10. Obtener la lista de años en que se estrenaron películas. Eliminar duplicados y ordenar de manera ascendente.
+--8. Obtener las 5 películas con más recaudación, ordenadas de manera descendente según su recaudación. Mostrar título, año, cantidad de espectadores y recaudación.
 
-11. Utilizando subqueries (subconsultas), obtener los títulos de las películas dirigidas por Christopher Nolan.
+--9. Obtener todas las personas que tengan las 5 vocales en su nombre.
 
-12. Utilizando subqueries, obtener los nombres de los actores nacidos en Reino Unido. Ordenar por nombre.
+--10. Obtener la lista de años en que se estrenaron películas. Eliminar duplicados y ordenar de manera ascendente.
 
-13. Utilizando subqueries, obtener todas las películas de "20th Century Fox" (cualquiera sea su año de estreno) y además, sin importar su estudio, aquellas que fueron estrenadas luego de 2010.
+--11. Utilizando subqueries (subconsultas), obtener los títulos de las películas dirigidas por Christopher Nolan.
 
-14. Utilizando subqueries, obtener todas las películas de "Warner Bros" estrenadas en 2015 o años posteriores.
+--12. Utilizando subqueries, obtener los nombres de los actores nacidos en Reino Unido. Ordenar por nombre.
 
-*/
+--13. Utilizando subqueries, obtener todas las películas de "20th Century Fox" (cualquiera sea su año de estreno) y además, sin importar su estudio, aquellas que fueron estrenadas luego de 2010.
+
+--14. Utilizando subqueries, obtener todas las películas de "Warner Bros" estrenadas en 2015 o años posteriores.
+
+
 
 -- Soluciones
 
