@@ -6,7 +6,7 @@ SELECT title, release_year FROM movies ORDER BY release_year DESC;
 
 --2. Obtener el nombre y fecha de nacimiento de los actores nacidos desde el 01 de enero de 1975.
 
-SELECT name, birth_date, ORDER BY >= '1975-01-01' AND category = 'Actor';
+SELECT name, birth_date FROM people WHERE category = 'Actor' AND birth_date >= '1975-01-01' ORDER BY birth_date ASC;
 
 --3. Obtener los actores cuyo nombre comience con la letra 'B'.
 
@@ -53,10 +53,11 @@ SELECT name FROM people WHERE category = 'Actor' AND country_of_birth_id = (SELE
 
 --13. Utilizando subqueries, obtener todas las películas de "20th Century Fox" (cualquiera sea su año de estreno) y además, sin importar su estudio, aquellas que fueron estrenadas luego de 2010.
 
-
+SELECT title, release_year FROM movies WHERE studio_id = (SELECT studio_id FROM studios WHERE studio_name = '20th Century Fox') OR release_year >= 2010;
 
 --14. Utilizando subqueries, obtener todas las películas de "Warner Bros" estrenadas en 2015 o años posteriores.
 
+SELECT title, release_year FROM movies WHERE studio_id = (SELECT studio_id FROM studios WHERE studio_name = 'Warner Bros') AND release_year >= 2015;
 
 
 -- Soluciones
