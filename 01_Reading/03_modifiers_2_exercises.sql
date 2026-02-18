@@ -1,57 +1,67 @@
-/*
-
-1. Obtener el título y año de estreno de las películas que no fueron lanzadas en 1993, 1999, 2000 y 2017.
 
 
+--1. Obtener el título y año de estreno de las películas que no fueron lanzadas en 1993, 1999, 2000 y 2017.
 
-2. Obtener las películas que no tienen año de estreno.
+SELECT title, release_year FROM movies WHERE release_year NOT IN (1993, 1999, 2000, 2017);
 
-3. Obtener las películas con estudio cinematográfico asociado.
+--2. Obtener las películas que no tienen año de estreno.
 
-4. Obtener los actores sin fecha de nacimiento o identificador de país de nacimiento.
+SELECT * FROM movies WHERE release_year IS NULL;
 
-5. Obtener los actores sin fecha de nacimiento e identificador de país de nacimiento.
+--3. Obtener las películas con estudio cinematográfico asociado.
 
-6. Obtener la cantidad total de películas almacenadas en la base de datos. Mostrar el resultado como "Total Peliculas".
+SELECT title FROM movies WHERE studio_id IS NOT NULL;
 
-7. Calcular el promedio de recaudación de todas las películas.
+--4. Obtener los actores sin fecha de nacimiento o identificador de país de nacimiento.
 
-8. Contar cuántas películas se estrenaron por año. Ordenar por año descendente.
+SELECT name, birth_date, country_of_birth_id FROM people WHERE (birth_date IS NULL OR country_of_birth_id IS NULL) AND category = 'Actor';
 
-9. Obtener las películas cuyo año de estreno está entre 1990 y 1999.
+--5. Obtener los actores sin fecha de nacimiento e identificador de país de nacimiento.
 
-10. Clasificar las películas según su recaudación, mostrando título, recaudación y clasificación, siguiendo estos criterios:
-    - Menor a 500000000, mostrar 'Bajo rendimiento'
+
+
+--6. Obtener la cantidad total de películas almacenadas en la base de datos. Mostrar el resultado como "Total Peliculas".
+
+--7. Calcular el promedio de recaudación de todas las películas.
+
+--8. Contar cuántas películas se estrenaron por año. Ordenar por año descendente.
+
+--9. Obtener las películas cuyo año de estreno está entre 1990 y 1999.
+
+--10. Clasificar las películas según su recaudación, mostrando título, recaudación y clasificación, siguiendo estos criterios:
+   /* - Menor a 500000000, mostrar 'Bajo rendimiento'
     - Entre 100000000 y 500000000, mostrar 'Moderado'
     - Entre 500000000 y 1000000000, mostrar "Éxito"
     - Mayor a 1000000000, mostrar "Éxito masivo"
     - Recaudación nula, mostrar "Sin datos de recaudación"
-    - Ordena el resultado alfabéticamente por nombre de película.
+    - Ordena el resultado alfabéticamente por nombre de película.*/
 
-11. Obtiene el nombre y fecha de nacimiento de cada actor. Muestra el resultado en una única columna llamada "Actores", con formato "Nombre actor (fecha nacimiento)". Descarta los actores sin fecha de nacimiento.
 
-12. Obtiene el valor mínimo de recaudación (no usar los modificadores ORDER BY y LIMIT).
 
-13. Obtiene la cantidad máxima de espectadores (no usar el modificador ORDER BY y LIMIT). 
+--11. Obtiene el nombre y fecha de nacimiento de cada actor. Muestra el resultado en una única columna llamada "Actores", con formato "Nombre actor (fecha nacimiento)". Descarta los actores sin fecha de nacimiento.
 
-14. Obtiene la recaudación total y cantidad total de espectadores de todas las películas. 
+--12. Obtiene el valor mínimo de recaudación (no usar los modificadores ORDER BY y LIMIT).
 
-15. Obtiene título y año de estreno de las películas. Si no está el año, mostrar "No especificado". Usa los alias "Película" y "Año Estreno". Ordenar por película.
+--13. Obtiene la cantidad máxima de espectadores (no usar el modificador ORDER BY y LIMIT). 
 
-16. Mostrar los años en que se estrenaron más de 1 película. Ordena por año de estreno ascendente. 
+--14. Obtiene la recaudación total y cantidad total de espectadores de todas las películas. 
 
-17. Obtiene los estudios de cine que han producido películas cuya taquilla supera el promedio de recaudación.
+--15. Obtiene título y año de estreno de las películas. Si no está el año, mostrar "No especificado". Usa los alias "Película" y "Año Estreno". Ordenar por película.
 
-18. Obtiene el año de nacimiento de cada director.
+--16. Mostrar los años en que se estrenaron más de 1 película. Ordena por año de estreno ascendente. 
 
-19. Obtiene los títulos de las películas en mayúsculas y la cantidad de letras de su nombre.
+--17. Obtiene los estudios de cine que han producido películas cuya taquilla supera el promedio de recaudación.
 
-20. Calcula la edad aproximada de cada persona utilizando funciones de fecha.
-    - Tener en cuenta solo el año de nacimiento al hacer el cálculo.
+--18. Obtiene el año de nacimiento de cada director.
+
+--19. Obtiene los títulos de las películas en mayúsculas y la cantidad de letras de su nombre.
+
+--20. Calcula la edad aproximada de cada persona utilizando funciones de fecha.
+  /*  - Tener en cuenta solo el año de nacimiento al hacer el cálculo.
     - Excluye las personas sin fecha de nacimiento.
-    - Ordena por edad ascendente.
+    - Ordena por edad ascendente.*/
 
-*/
+
 
 -- Soluciones
 
