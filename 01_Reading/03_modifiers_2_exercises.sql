@@ -17,14 +17,19 @@ SELECT title FROM movies WHERE studio_id IS NOT NULL;
 SELECT name, birth_date, country_of_birth_id FROM people WHERE (birth_date IS NULL OR country_of_birth_id IS NULL) AND category = 'Actor';
 
 --5. Obtener los actores sin fecha de nacimiento e identificador de país de nacimiento.
-
-
+-- ¡¡ERROR PREGUNTA REPETIDA!!
 
 --6. Obtener la cantidad total de películas almacenadas en la base de datos. Mostrar el resultado como "Total Peliculas".
 
+SELECT COUNT(*)  AS 'Total Peliculas' FROM movies ;
+
 --7. Calcular el promedio de recaudación de todas las películas.
 
+SELECT  AVG(total_revenue) AS 'Promedio_Recaudacion' FROM movies;
+
 --8. Contar cuántas películas se estrenaron por año. Ordenar por año descendente.
+
+
 
 --9. Obtener las películas cuyo año de estreno está entre 1990 y 1999.
 
