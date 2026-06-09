@@ -40,6 +40,7 @@ SELECT  AVG(total_revenue) AS 'Promedio_Recaudacion' FROM movies;
     - Mayor a 1000000000, mostrar "Éxito masivo"
     - Recaudación nula, mostrar "Sin datos de recaudación"
     - Ordena el resultado alfabéticamente por nombre de película.*/
+    
 
 
 
